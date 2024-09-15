@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Routes,Route} from 'react-router-dom';
+
+
+
+//react slick css
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Homepage from './pages/home';
+
+//pages
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+    <Route path="/" element={<Homepage/>}/>
+    <Route path="/about_us" element={<about_us_page/>}/>
+    
+    
+    </Routes>
+
+
   );
 }
 

@@ -1,0 +1,56 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%; 
+   
+}
+
+.logo {
+    max-width: 170px;
+    
+}
+
+/* Navbar menu items */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    color: #49557e;
+}
+
+/* Navbar right section */
+.Navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;  
+}
+
+.searchimg {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.basketimg {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.signin {
+    background: transparent;
+    font-size: 18px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin:hover {
+    background-color: #fff4f2;
+}
